@@ -8,7 +8,9 @@
   "scripts": {
     "start": "styleguidist server",
     "test": "jest",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "prepublishOnly": "rm -rf lib && npm run build",
+    "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
   },
   "repository": {
     "type": "git",
