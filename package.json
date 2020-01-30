@@ -2,10 +2,13 @@
   "name": "react-sample-components-library",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "browser": "lib/index.umd.js",
+  "module": "lib/index.es.js",
   "scripts": {
     "start": "styleguidist server",
-    "test": "jest"
+    "test": "jest",
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -18,6 +21,12 @@
     "url": "https://github.com/weisuoke/react-sample-components-library/issues"
   },
   "homepage": "https://github.com/weisuoke/react-sample-components-library#readme",
+  "peerDependencies": {
+    "@emotion/core": "10.x",
+    "@emotion/styled": "10.x",
+    "react": "16.x",
+    "react-dom": "16.12.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
@@ -33,6 +42,13 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-styleguidist": "^10.6.1",
+    "rollup": "^1.30.1",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-terser": "^5.2.0",
+    "rollup-plugin-uglify": "^6.0.4",
     "webpack": "^4.41.5"
   }
 }
