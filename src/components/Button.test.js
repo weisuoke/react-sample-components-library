@@ -20,7 +20,7 @@ describe("Button", () => {
     expect(onClickMock).toBeCalled();
   });
 
-  test("should make text uppercase", () => {
+  test("should make text uppercase1", () => {
     const { container } = render(<Button text="We Salute You!" />);
     const component = getByText(container, "We Salute You!");
 
