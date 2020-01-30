@@ -1,7 +1,7 @@
-A very simple button
+A very simple button.
 
 ```jsx
-import Button from './Button';
+import { Button } from "react-sample-components-library";
 
-<Button text="We Salute You!"/>
+<Button text="I MUST BE DREAMING" />;
 ```
