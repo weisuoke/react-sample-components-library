@@ -16,6 +16,9 @@
     "type": "git",
     "url": "git+https://github.com/weisuoke/react-sample-components-library.git"
   },
+  "files": [
+    "/lib"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
